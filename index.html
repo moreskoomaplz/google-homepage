@@ -9,17 +9,19 @@
             width: 100vw;
             height: 100vh;
             grid-template-columns: 1fr 2fr 1fr;
-            grid-template-rows: 50px 100px 100px 100px 100px 100px;
+            grid-template-rows: 200px 100px 100px 100px 100px 100px;
             gap: 10px;
             padding: 10px;
             box-sizing: border-box;
             justify-content: right;
         }
-         
+        /* 
         .container div {
             padding: 10px;
             border: 1px solid black;
         }
+*/
+
         .uppermenu{
             grid-column-start: 1;
             grid-column-end: 4;
@@ -34,6 +36,7 @@
             grid-column-end: 1;
             grid-row-start: 1;
             grid-row-end: 2;
+            padding: 15px;
 
         }
         .upperright{
@@ -43,6 +46,7 @@
             grid-row-end: 2;
             display: ;
             text-align: end;
+            padding: 15px;
         }
         .logo{
             grid-column-start: 2;
@@ -92,11 +96,7 @@
             cursor: pointer;
             user-select: none;
         }
-        .footer{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 5;
-            grid-row-end: 6;
+        .footerleft{
             justify-content: center;
             position: absolute;
             bottom: 0;
@@ -104,11 +104,29 @@
             right: 0;
             background: #f2f2f2;
             min-width: 50vw;
+            margin: 0px;
+            padding: 25px;
+            height: px;
+            text-align: ;
+                   
+        }
+        .footerright{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 0px;
+            padding: 25px;
                    
         }
         a {
-        color: inherit;
+        color: #5f6368;
         text-decoration: none;
+        font-family: arial,sans-serif;
+        font-size: 14px;
         }
 
         a:hover {
@@ -150,13 +168,19 @@
         <button>I'm Feeling Lucky</button>
         
     </div>
-    <div class="footer">
-        Advertising
-        Business
-        How search works
-        Privacy
-        Terms
-        Settings
+    <div class="footerleft">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How search works</a>
+        
+        
+        
+        
+    </div>
+    <div class="footerright">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
     </div>
 </div>
 </body>
